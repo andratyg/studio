@@ -5,36 +5,11 @@ import { ExternalLink, CodeXml, FolderOpen } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import Image from 'next/image';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
-
-const projects = [
-  {
-    title: "Secure RBAC System",
-    description: "Sistem manajemen user multi-level dengan keamanan sesi PHP murni & enkripsi custom.",
-    tag: "Masterpiece",
-    link: "#",
-    tech: "PHP Native",
-    imageId: "project-rbac"
-  },
-  {
-    title: "E-Arsip Sekolah",
-    description: "Digitalisasi dokumen surat menyurat menggunakan sistem penomoran otomatis.",
-    tag: "Sistem Informasi",
-    link: "#",
-    tech: "MySQL",
-    imageId: "project-arsip"
-  },
-  {
-    title: "API Gateway Mini",
-    description: "Middleware sederhana untuk menghubungkan berbagai layanan internal.",
-    tag: "Backend",
-    link: "#",
-    tech: "JavaScript",
-    imageId: "project-api"
-  }
-];
+import projectsData from '@/lib/projects.json';
 
 export default function ProjectCard() {
+  const projects = projectsData.projects;
+
   return (
     <div className="bento-card p-6 md:p-8 flex flex-col h-full group">
       <div className="flex items-center justify-between mb-6">
@@ -48,17 +23,15 @@ export default function ProjectCard() {
       <ScrollArea className="flex-1 pr-4 -mr-4">
         <div className="space-y-10">
           {projects.map((project, index) => {
-            const imgData = PlaceHolderImages.find(img => img.id === project.imageId) || PlaceHolderImages[0];
-            
             return (
               <div key={index} className="group/item border-b border-white/5 pb-8 last:border-0 last:pb-0">
                 <div className="relative aspect-video w-full mb-4 rounded-xl overflow-hidden border border-white/10 group-hover/item:border-primary/30 transition-all">
                   <Image
-                    src={imgData.imageUrl}
+                    src={project.imageUrl}
                     alt={project.title}
                     fill
                     className="object-cover opacity-80 group-hover/item:opacity-100 group-hover/item:scale-105 transition-all duration-500"
-                    data-ai-hint={imgData.imageHint}
+                    data-ai-hint={project.imageHint}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                   <div className="absolute bottom-3 left-3 flex gap-2">
