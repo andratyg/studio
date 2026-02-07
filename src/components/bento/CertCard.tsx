@@ -87,7 +87,7 @@ const certificates = [
   },
   {
     id: 'cert-sql',
-    title: 'Redist Mastery',
+    title: 'Redis Mastery',
     issuer: 'Redis University',
     year: '2024',
     validUntil: '2027',
@@ -124,7 +124,6 @@ export default function CertCard() {
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/20 to-transparent" />
                       
-                      {/* Only show text on desktop or for very small titles on mobile */}
                       <div className="absolute bottom-1 md:bottom-3 left-1 md:left-3 right-1 md:right-3">
                         <p className="font-code text-[6px] md:text-[10px] text-primary uppercase font-bold tracking-tighter leading-tight md:mb-1 line-clamp-2 md:line-clamp-none">
                           {cert.title}
