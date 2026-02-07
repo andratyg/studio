@@ -92,18 +92,34 @@ const certificates = [
     year: '2024',
     validUntil: '2027',
     description: 'Implementasi caching layer menggunakan Redis untuk meningkatkan throughput aplikasi secara signifikan.'
+  },
+  {
+    id: 'cert-backend',
+    title: 'System Architect',
+    issuer: 'AWS Training',
+    year: '2024',
+    validUntil: '2027',
+    description: 'Perancangan sistem terdistribusi yang skalabel dan fault-tolerant di lingkungan cloud.'
+  },
+  {
+    id: 'cert-sql',
+    title: 'Microservices Guru',
+    issuer: 'Udemy Business',
+    year: '2023',
+    validUntil: 'Lifetime',
+    description: 'Membangun ekosistem layanan mikro yang komunikatif dan terisolasi dengan baik.'
   }
 ];
 
 export default function CertCard() {
   return (
     <div className="bento-card p-4 md:p-6 flex flex-col h-full overflow-hidden">
-      <div className="flex items-center gap-2 mb-4 md:mb-6">
+      <div className="flex items-center gap-2 mb-4">
         <Award className="w-4 h-4 text-primary" />
-        <h3 className="text-sm font-code text-muted-foreground uppercase tracking-widest">Certified</h3>
+        <h3 className="text-sm font-code text-muted-foreground uppercase tracking-widest">Certifications</h3>
       </div>
       
-      {/* Scrollable container with responsive grid */}
+      {/* Scrollable container with responsive grid: 3 columns on mobile, 1 on laptop */}
       <div className="relative flex-1 overflow-y-auto no-scrollbar pr-1">
         <div className="grid grid-cols-3 md:grid-cols-1 gap-2 md:gap-4">
           {certificates.map((cert, i) => {
@@ -125,10 +141,10 @@ export default function CertCard() {
                       <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/20 to-transparent" />
                       
                       <div className="absolute bottom-1 md:bottom-3 left-1 md:left-3 right-1 md:right-3">
-                        <p className="font-code text-[6px] md:text-[10px] text-primary uppercase font-bold tracking-tighter leading-tight md:mb-1 line-clamp-2 md:line-clamp-none">
+                        <p className="font-code text-[6px] md:text-[10px] text-primary uppercase font-bold tracking-tighter leading-tight line-clamp-2 md:line-clamp-none">
                           {cert.title}
                         </p>
-                        <p className="hidden md:block text-[9px] text-muted-foreground font-code line-clamp-1">
+                        <p className="hidden md:block text-[9px] text-muted-foreground font-code line-clamp-1 mt-1">
                           {cert.issuer} • {cert.year}
                         </p>
                       </div>
@@ -143,7 +159,7 @@ export default function CertCard() {
                       {cert.title}
                     </DialogTitle>
                     <DialogDescription className="text-muted-foreground font-code text-xs mt-2">
-                      Detail sertifikasi dan validitas dokumen profesional.
+                      Official certification record and professional details.
                     </DialogDescription>
                   </DialogHeader>
                   
@@ -177,8 +193,8 @@ export default function CertCard() {
                         <div className="flex items-start gap-3 p-3 rounded-lg bg-white/5 border border-white/5 transition-colors hover:bg-white/10">
                           <Timer className="w-4 h-4 text-primary mt-0.5" />
                           <div>
-                            <p className="text-[10px] font-code text-muted-foreground uppercase font-bold">Valid Until</p>
-                            <p className="text-sm font-medium">{cert.validUntil}</p>
+                            <p className="text-[10px] font-code text-muted-foreground uppercase font-bold">Status</p>
+                            <p className="text-sm font-medium">{cert.validUntil === 'Lifetime' ? 'Lifetime' : `Valid until ${cert.validUntil}`}</p>
                           </div>
                         </div>
                       </div>
@@ -186,7 +202,7 @@ export default function CertCard() {
                       <div className="flex items-start gap-3 p-3 rounded-lg bg-white/5 border border-white/5 transition-colors hover:bg-white/10">
                         <Info className="w-4 h-4 text-primary mt-0.5" />
                         <div>
-                          <p className="text-[10px] font-code text-muted-foreground uppercase font-bold">Description</p>
+                          <p className="text-[10px] font-code text-muted-foreground uppercase font-bold">Key Competencies</p>
                           <p className="text-xs text-muted-foreground leading-relaxed mt-1">{cert.description}</p>
                         </div>
                       </div>
@@ -199,14 +215,13 @@ export default function CertCard() {
         </div>
       </div>
 
-      <div className="mt-4 md:mt-6 pt-2 md:pt-4 border-t border-white/5">
+      <div className="mt-4 pt-4 border-t border-white/5">
         <div className="flex items-center justify-between text-[8px] md:text-[10px] font-code text-muted-foreground uppercase tracking-widest">
           <div className="flex items-center gap-2">
             <div className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
-            <span className="hidden xs:inline">Scroll for more</span>
-            <span className="xs:hidden">More</span>
+            <span>Scroll for more</span>
           </div>
-          <span className="opacity-50">Click items</span>
+          <span className="opacity-50">Click items for info</span>
         </div>
       </div>
 
