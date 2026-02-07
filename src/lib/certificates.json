@@ -1,0 +1,35 @@
+
+{
+  "certificates": [
+    {
+      "id": "cert-backend",
+      "title": "Back-End Developer",
+      "issuer": "Dicoding Indonesia",
+      "year": "2023",
+      "validUntil": "2026",
+      "description": "Sertifikasi kompetensi dalam membangun aplikasi back-end menggunakan Node.js, REST API, dan database NoSQL/SQL.",
+      "imageUrl": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600",
+      "pdfUrl": "#"
+    },
+    {
+      "id": "cert-sql",
+      "title": "SQL Database Mastery",
+      "issuer": "Mastering SQL Academy",
+      "year": "2023",
+      "validUntil": "Lifetime",
+      "description": "Penguasaan query kompleks, optimasi performa database, dan perancangan skema data relasional yang efisien.",
+      "imageUrl": "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600",
+      "pdfUrl": "#"
+    },
+    {
+      "id": "cert-bnsp",
+      "title": "Sertifikat Kompetensi",
+      "issuer": "BNSP / SMK Wikrama",
+      "year": "2024",
+      "validUntil": "2027",
+      "description": "Pengakuan kompetensi teknis dalam pengembangan perangkat lunak sesuai dengan standar industri nasional.",
+      "imageUrl": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=600",
+      "pdfUrl": "#"
+    }
+  ]
+}
