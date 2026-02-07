@@ -2,39 +2,9 @@
   "placeholderImages": [
     {
       "id": "profile-nara",
-      "description": "Minimalist cyberpunk-style portrait",
-      "imageUrl": "https://images.unsplash.com/photo-1724770567314-a18b575aba94?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjeWJlcnB1bmslMjBwb3J0cmFpdHxlbnwwfHx8fDE3NzAzODE2ODJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "Foto Profil Utama",
+      "imageUrl": "/images/profile.jpg",
       "imageHint": "cyberpunk portrait"
-    },
-    {
-      "id": "project-rbac",
-      "description": "Abstract security system visualization",
-      "imageUrl": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
-      "imageHint": "cyber security"
-    },
-    {
-      "id": "project-arsip",
-      "description": "Digital archive system illustration",
-      "imageUrl": "https://images.unsplash.com/photo-1544396821-4dd40b938ad3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
-      "imageHint": "digital documents"
-    },
-    {
-      "id": "project-api",
-      "description": "API Gateway visualization",
-      "imageUrl": "https://images.unsplash.com/photo-1558494949-ef010cbdcc51?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
-      "imageHint": "server network"
-    },
-    {
-      "id": "cert-backend",
-      "description": "Backend Development Certificate",
-      "imageUrl": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjb2Rpbmd8ZW58MHx8fHwxNzczMDk1OTY0fDA&ixlib=rb-4.1.0&q=80&w=600",
-      "imageHint": "coding certificate"
-    },
-    {
-      "id": "cert-sql",
-      "description": "SQL Mastery Certificate",
-      "imageUrl": "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxkYXRhYmFzZXxlbnwwfHx8fDE3NzMwOTU5NjR8MA&ixlib=rb-4.1.0&q=80&w=600",
-      "imageHint": "database certificate"
     }
   ]
 }

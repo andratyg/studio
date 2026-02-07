@@ -7,7 +7,7 @@
       "tag": "Masterpiece",
       "link": "https://github.com/nara/rbac-system",
       "tech": "PHP Native",
-      "imageUrl": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageUrl": "/images/project-rbac.jpg",
       "imageHint": "cyber security"
     },
     {
@@ -16,7 +16,7 @@
       "tag": "Sistem Informasi",
       "link": "https://github.com/nara/e-arsip",
       "tech": "MySQL",
-      "imageUrl": "https://images.unsplash.com/photo-1544396821-4dd40b938ad3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageUrl": "/images/project-arsip.jpg",
       "imageHint": "digital documents"
     },
     {
@@ -25,7 +25,7 @@
       "tag": "Backend",
       "link": "https://github.com/nara/api-gateway",
       "tech": "JavaScript",
-      "imageUrl": "https://images.unsplash.com/photo-1558494949-ef010cbdcc51?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageUrl": "/images/project-api.jpg",
       "imageHint": "server network"
     }
   ]

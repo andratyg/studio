@@ -7,20 +7,21 @@ Semua data portofolio Anda sekarang sangat mudah dikelola. Anda tidak perlu meng
 
 1.  **Tambah/Edit Proyek:**
     Buka file `src/lib/projects.json`.
-    *   `imageUrl`: Masukkan link gambar atau path file gambar.
+    *   `imageUrl`: Masukkan link gambar atau path file gambar (contoh: `/images/foto.jpg`).
     *   `link`: Masukkan link GitHub proyek Anda.
 
 2.  **Tambah/Edit Sertifikat & PDF:**
     Buka file `src/lib/certificates.json`.
-    *   `pdfUrl`: Masukkan link file PDF sertifikat Anda. Jika file ada di komputer, upload ke folder `public/certs/` dan ganti isinya menjadi `/certs/nama-file.pdf`.
+    *   `pdfUrl`: Masukkan link file PDF atau path lokal (contoh: `/certs/sertifikat.pdf`).
 
 3.  **Ganti Foto Profil:**
     Buka file `src/lib/placeholder-images.json` dan ganti URL pada ID `profile-nara`.
 
-## 🚀 Cara Menampilkan Gambar/PDF Sendiri
-- **Gambar:** Masukkan foto ke folder `public/images/`.
-- **PDF:** Masukkan file ke folder `public/certs/`.
-- Lalu di file JSON, panggil dengan cara: `/images/foto.jpg` atau `/certs/file.pdf`.
+## 🚀 Cara Menampilkan Gambar/PDF Milik Sendiri
+Agar gambar/PDF dari komputer Anda muncul di web:
+- **Gambar:** Masukkan file foto ke folder `public/images/`.
+- **PDF:** Masukkan file PDF ke folder `public/certs/`.
+- **Cara Panggil:** Di file JSON, ganti isinya menjadi `/images/nama-file.jpg` atau `/certs/nama-file.pdf`.
 
 ## 🛠 Teknologi Utama
 - Next.js 15 (Framework)
