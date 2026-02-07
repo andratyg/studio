@@ -1,15 +1,15 @@
 'use client';
 
 import { Award } from 'lucide-react';
+import Image from 'next/image';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export default function CertCard() {
-  const certs = [
-    "Dicoding Backend",
-    "Sertifikat Kompetensi SMK",
-    "Basic SQL Mastery",
-    "Clean Code Fundamentals",
-    "Database Security Advanced",
-    "Native PHP Performance"
+  const certImages = [
+    { id: 'cert-backend', title: 'Dicoding Backend' },
+    { id: 'cert-sql', title: 'SQL Mastery' },
+    { id: 'cert-backend', title: 'Sertifikat Kompetensi' },
+    { id: 'cert-sql', title: 'Database Security' }
   ];
 
   return (
@@ -20,19 +20,35 @@ export default function CertCard() {
       </div>
       
       <div className="relative flex-1 overflow-hidden mask-fade">
-        <div className="animate-marquee space-y-4 py-2">
-          {/* Double list for seamless loop */}
-          {[...certs, ...certs].map((cert, i) => (
-            <div key={i} className="p-3 rounded-lg bg-white/5 border border-white/5 font-code text-[11px] leading-tight">
-              {cert}
-            </div>
-          ))}
+        <div className="animate-marquee space-y-6 py-4">
+          {[...certImages, ...certImages].map((cert, i) => {
+            const imgData = PlaceHolderImages.find(img => img.id === cert.id);
+            return (
+              <div key={i} className="group/item relative rounded-xl overflow-hidden border border-white/10 bg-white/5 transition-all hover:border-primary/30">
+                <div className="relative aspect-[16/10] w-full">
+                  <Image
+                    src={imgData?.imageUrl || ''}
+                    alt={cert.title}
+                    fill
+                    className="object-cover opacity-60 group-hover/item:opacity-100 transition-opacity"
+                    data-ai-hint={imgData?.imageHint || 'certificate'}
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
+                  <div className="absolute bottom-3 left-3 right-3">
+                    <p className="font-code text-[10px] text-primary uppercase font-bold tracking-tighter">
+                      {cert.title}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
       
       <style jsx>{`
         .mask-fade {
-          mask-image: linear-gradient(to bottom, transparent, black 10%, black 90%, transparent);
+          mask-image: linear-gradient(to bottom, transparent, black 15%, black 85%, transparent);
         }
       `}</style>
     </div>

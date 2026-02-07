@@ -11,6 +11,18 @@
       "description": "Abstract security system visualization",
       "imageUrl": "https://images.unsplash.com/photo-1716380703770-c3dd70781e82?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzZXJ2ZXIlMjBzZWN1cml0eXxlbnwwfHx8fDE3NzA0MjI1MTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "server security"
+    },
+    {
+      "id": "cert-backend",
+      "description": "Backend Development Certificate",
+      "imageUrl": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjb2Rpbmd8ZW58MHx8fHwxNzczMDk1OTY0fDA&ixlib=rb-4.1.0&q=80&w=600",
+      "imageHint": "coding certificate"
+    },
+    {
+      "id": "cert-sql",
+      "description": "SQL Mastery Certificate",
+      "imageUrl": "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxkYXRhYmFzZXxlbnwwfHx8fDE3NzMwOTU5NjR8MA&ixlib=rb-4.1.0&q=80&w=600",
+      "imageHint": "database certificate"
     }
   ]
 }
