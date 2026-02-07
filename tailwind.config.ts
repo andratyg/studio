@@ -12,7 +12,7 @@ export default {
       fontFamily: {
         body: ['Inter', 'sans-serif'],
         headline: ['Inter', 'sans-serif'],
-        code: ['monospace'],
+        code: ['Fira Code', 'monospace'],
       },
       colors: {
         background: 'hsl(var(--background))',
@@ -88,10 +88,15 @@ export default {
             height: '0',
           },
         },
+        'marquee': {
+          '0%': { transform: 'translateY(0%)' },
+          '100%': { transform: 'translateY(-100%)' },
+        }
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
+        'marquee': 'marquee 20s linear infinite',
       },
     },
   },

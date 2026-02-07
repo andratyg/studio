@@ -1,3 +1,16 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "profile-nara",
+      "description": "Minimalist cyberpunk-style portrait",
+      "imageUrl": "https://images.unsplash.com/photo-1724770567314-a18b575aba94?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjeWJlcnB1bmslMjBwb3J0cmFpdHxlbnwwfHx8fDE3NzAzODE2ODJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cyberpunk portrait"
+    },
+    {
+      "id": "project-rbac",
+      "description": "Abstract security system visualization",
+      "imageUrl": "https://images.unsplash.com/photo-1716380703770-c3dd70781e82?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzZXJ2ZXIlMjBzZWN1cml0eXxlbnwwfHx8fDE3NzA0MjI1MTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "server security"
+    }
+  ]
 }
