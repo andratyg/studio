@@ -13,7 +13,7 @@ export default function Portfolio() {
       <header className="mb-4 flex flex-col md:flex-row md:items-end justify-between gap-6">
         <div className="space-y-1">
           <h2 className="text-primary font-code text-sm tracking-widest uppercase mb-2">Portofolio / 2024</h2>
-          <p className="text-muted-foreground font-code text-xs">Arsitek Sistem & Logika Backend</p>
+          <p className="text-muted-foreground font-code text-xs">Junior Backend Developer & Logika PPLG</p>
         </div>
         
         <div className="flex flex-col md:flex-row items-start md:items-center gap-6">

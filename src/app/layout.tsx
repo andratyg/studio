@@ -3,13 +3,13 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: "Nara | Backend Developer PHP Indonesia | System Architect Sukabumi",
-  description: "Jasa Pembuatan Web PHP & System Architect Specialist di Sukabumi. Fokus pada clean logic, secure systems, dan native performance. Siswa SMK Wikrama Bogor Jurusan PPLG.",
-  keywords: "Backend Developer PHP Indonesia, Jasa Pembuatan Web PHP, Web Developer Sukabumi, Nara Portfolio, SMK Wikrama Bogor, System Architect, Backend Developer Sukabumi, PHP Native Expert",
+  title: "Nara | Junior Backend Developer PHP | PPLG Specialist Sukabumi",
+  description: "Portofolio Nara, Junior Backend Developer PHP dari Sukabumi. Fokus pada clean logic dan native performance. Siswa SMK Wikrama Bogor Jurusan PPLG.",
+  keywords: "Junior Backend Developer PHP, Jasa Pembuatan Web PHP, Web Developer Sukabumi, Nara Portfolio, SMK Wikrama Bogor, PPLG Specialist, Backend Developer Sukabumi, PHP Native Expert",
   authors: [{ name: "Nara" }],
   openGraph: {
-    title: "Nara | Backend Developer & System Architect",
-    description: "Expert in PHP Native, Security, and System Architecture. Let's build something secure and fast.",
+    title: "Nara | Junior Backend Developer & PPLG Specialist",
+    description: "Fokus pada PHP Native, Security, dan Logika Backend. Siswa SMK Wikrama Bogor.",
     type: "website",
     locale: "id_ID",
   },

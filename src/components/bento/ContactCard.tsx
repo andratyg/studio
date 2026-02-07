@@ -8,8 +8,9 @@ import { useState } from 'react';
 export default function ContactCard() {
   const { toast } = useToast();
   const [copied, setCopied] = useState(false);
-  const email = "nara@example.com"; 
-  const whatsappNumber = "628123456789"; 
+  const email = "indraandra545@gmail.com"; 
+  const githubUrl = "https://github.com/andratyg";
+  const whatsappNumber = "628123456789"; // Sesuaikan dengan nomor Anda jika perlu
 
   const copyToClipboard = () => {
     navigator.clipboard.writeText(email);
@@ -44,7 +45,12 @@ export default function ContactCard() {
             >
               <MessageCircle className="w-6 h-6" />
             </a>
-            <a href="#" className="p-3 rounded-full bg-white/5 hover:bg-primary/20 hover:text-primary transition-all duration-300">
+            <a 
+              href={githubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-3 rounded-full bg-white/5 hover:bg-primary/20 hover:text-primary transition-all duration-300"
+            >
               <Github className="w-6 h-6" />
             </a>
             <a href="#" className="p-3 rounded-full bg-white/5 hover:bg-primary/20 hover:text-primary transition-all duration-300">

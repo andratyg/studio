@@ -1,4 +1,3 @@
-
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
@@ -19,7 +18,7 @@ export default function ProfileCard() {
         </div>
         <div className="space-y-2">
           <h1 className="text-4xl font-bold tracking-tight">Nara</h1>
-          <p className="text-primary font-code text-sm font-medium">Backend Logic & System Architect</p>
+          <p className="text-primary font-code text-sm font-medium">Junior Backend Developer & PPLG Enthusiast</p>
           <div className="flex flex-col gap-1">
             <span className="text-muted-foreground text-xs uppercase tracking-widest font-semibold">Siswa SMK Wikrama Bogor</span>
             <span className="text-muted-foreground text-xs uppercase tracking-widest font-semibold">Jurusan PPLG</span>
