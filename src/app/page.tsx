@@ -12,8 +12,8 @@ export default function Portfolio() {
     <main className="min-h-screen py-12 px-4 md:px-8 max-w-7xl mx-auto flex flex-col gap-6">
       <header className="mb-4 flex flex-col md:flex-row md:items-end justify-between gap-6">
         <div className="space-y-1">
-          <h2 className="text-primary font-code text-sm tracking-widest uppercase mb-2">Portfolio / 2024</h2>
-          <p className="text-muted-foreground font-code text-xs">System Architect & Backend Logic</p>
+          <h2 className="text-primary font-code text-sm tracking-widest uppercase mb-2">Portofolio / 2024</h2>
+          <p className="text-muted-foreground font-code text-xs">Arsitek Sistem & Logika Backend</p>
         </div>
         
         <div className="flex flex-col md:flex-row items-start md:items-center gap-6">
@@ -65,7 +65,7 @@ export default function Portfolio() {
       </div>
 
       <footer className="mt-8 text-center text-muted-foreground font-code text-[10px] uppercase tracking-[0.2em] opacity-30">
-        Design and Code by Nara © 2024. All Rights Reserved. Built with Pure Logic.
+        Desain dan Kode oleh Nara © 2024. Hak Cipta Dilindungi. Dibangun dengan Logika Murni.
       </footer>
     </main>
   );

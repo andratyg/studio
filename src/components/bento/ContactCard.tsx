@@ -8,14 +8,14 @@ import { useState } from 'react';
 export default function ContactCard() {
   const { toast } = useToast();
   const [copied, setCopied] = useState(false);
-  const email = "nara@example.com"; // Ganti dengan email asli Anda
-  const whatsappNumber = "628123456789"; // Ganti dengan nomor WA asli Anda
+  const email = "nara@example.com"; 
+  const whatsappNumber = "628123456789"; 
 
   const copyToClipboard = () => {
     navigator.clipboard.writeText(email);
     setCopied(true);
     toast({
-      title: "Email Copied!",
+      title: "Email Berhasil Disalin!",
       description: "Alamat email telah disalin ke clipboard.",
     });
     setTimeout(() => setCopied(false), 2000);
@@ -24,7 +24,7 @@ export default function ContactCard() {
   return (
     <div className="bento-card p-8 flex flex-col md:flex-row items-center justify-between gap-8 h-full">
       <div className="flex flex-col gap-6 w-full md:w-auto">
-        <h3 className="text-sm font-code text-muted-foreground uppercase tracking-widest">Stay Connected</h3>
+        <h3 className="text-sm font-code text-muted-foreground uppercase tracking-widest">Tetap Terhubung</h3>
         <div className="flex flex-wrap items-center gap-4">
           <button 
             onClick={copyToClipboard}
@@ -60,7 +60,7 @@ export default function ContactCard() {
           className="w-full md:w-auto bg-primary text-black font-bold text-lg px-12 py-8 rounded-full shadow-[0_0_20px_rgba(0,255,255,0.3)] hover:shadow-[0_0_40px_rgba(0,255,255,0.5)] transition-all group"
           onClick={() => window.location.href = `mailto:${email}`}
         >
-          Let's Collaborate
+          Ayo Berkolaborasi
           <ArrowRight className="ml-2 w-6 h-6 group-hover:translate-x-2 transition-transform" />
         </Button>
       </div>

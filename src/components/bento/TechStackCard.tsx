@@ -1,4 +1,3 @@
-
 import { ShieldAlert } from 'lucide-react';
 
 export default function TechStackCard() {
@@ -12,7 +11,7 @@ export default function TechStackCard() {
   return (
     <div className="bento-card p-6 flex flex-col justify-between h-full">
       <div className="space-y-4">
-        <h3 className="text-sm font-code text-muted-foreground uppercase tracking-widest">Arsenal</h3>
+        <h3 className="text-sm font-code text-muted-foreground uppercase tracking-widest">Arsenal Teknologi</h3>
         <div className="grid grid-cols-1 gap-3">
           {stacks.map((stack) => (
             <div key={stack.name} className="flex items-center gap-3">
