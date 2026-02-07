@@ -10,7 +10,8 @@ export default function ContactCard() {
   const [copied, setCopied] = useState(false);
   const email = "indraandra545@gmail.com"; 
   const githubUrl = "https://github.com/andratyg";
-  const whatsappNumber = "628123456789"; // Sesuaikan dengan nomor Anda jika perlu
+  const linkedinUrl = "https://www.linkedin.com/in/nara-andra-tyaga-657488382";
+  const whatsappNumber = "6289660741310"; // Menggunakan format internasional 62
 
   const copyToClipboard = () => {
     navigator.clipboard.writeText(email);
@@ -42,6 +43,7 @@ export default function ContactCard() {
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-white/5 hover:bg-primary/20 hover:text-primary transition-all duration-300"
+              title="WhatsApp"
             >
               <MessageCircle className="w-6 h-6" />
             </a>
@@ -50,10 +52,17 @@ export default function ContactCard() {
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-white/5 hover:bg-primary/20 hover:text-primary transition-all duration-300"
+              title="GitHub"
             >
               <Github className="w-6 h-6" />
             </a>
-            <a href="#" className="p-3 rounded-full bg-white/5 hover:bg-primary/20 hover:text-primary transition-all duration-300">
+            <a 
+              href={linkedinUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-3 rounded-full bg-white/5 hover:bg-primary/20 hover:text-primary transition-all duration-300"
+              title="LinkedIn"
+            >
               <Linkedin className="w-6 h-6" />
             </a>
           </div>
