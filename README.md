@@ -23,6 +23,14 @@ Agar gambar/PDF dari komputer Anda muncul di web:
 - **PDF:** Masukkan file PDF ke folder `public/certs/`.
 - **Cara Panggil:** Di file JSON, ganti isinya menjadi `/images/nama-file.jpg` atau `/certs/nama-file.pdf`.
 
+## 🛠 Solusi Error Git (Rejected / Non-fast-forward)
+Jika Anda melihat error saat `git push`, jalankan perintah ini di terminal:
+1. `git pull origin main --rebase`
+2. `git push -u origin main`
+
+Atau jika Anda ingin menimpa paksa data di GitHub dengan data lokal:
+`git push -u origin main --force`
+
 ## 🛠 Teknologi Utama
 - Next.js 15 (Framework)
 - Tailwind CSS (Desain)
