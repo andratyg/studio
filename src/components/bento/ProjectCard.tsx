@@ -1,8 +1,11 @@
+
 'use client';
 
-import { ExternalLink, Code2, FolderOpen } from 'lucide-react';
+import { ExternalLink, CodeXml, FolderOpen } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { ScrollArea } from '@/components/ui/scroll-area';
+import Image from 'next/image';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 const projects = [
   {
@@ -10,21 +13,24 @@ const projects = [
     description: "Sistem manajemen user multi-level dengan keamanan sesi PHP murni & enkripsi custom.",
     tag: "Masterpiece",
     link: "#",
-    tech: "PHP Native"
+    tech: "PHP Native",
+    imageId: "project-rbac"
   },
   {
     title: "E-Arsip Sekolah",
     description: "Digitalisasi dokumen surat menyurat menggunakan sistem penomoran otomatis.",
     tag: "Sistem Informasi",
     link: "#",
-    tech: "MySQL"
+    tech: "MySQL",
+    imageId: "project-arsip"
   },
   {
     title: "API Gateway Mini",
     description: "Middleware sederhana untuk menghubungkan berbagai layanan internal.",
     tag: "Backend",
     link: "#",
-    tech: "JavaScript"
+    tech: "JavaScript",
+    imageId: "project-api"
   }
 ];
 
@@ -36,41 +42,55 @@ export default function ProjectCard() {
           <FolderOpen className="w-4 h-4 text-primary" />
           <h3 className="text-sm font-code text-muted-foreground uppercase tracking-widest">Portofolio Proyek</h3>
         </div>
-        <Code2 className="w-5 h-5 text-primary opacity-50 group-hover:opacity-100 transition-opacity" />
+        <CodeXml className="w-5 h-5 text-primary opacity-50 group-hover:opacity-100 transition-opacity" />
       </div>
 
       <ScrollArea className="flex-1 pr-4 -mr-4">
-        <div className="space-y-8">
-          {projects.map((project, index) => (
-            <div key={index} className="group/item border-b border-white/5 pb-6 last:border-0 last:pb-0">
-              <div className="flex items-center gap-2 mb-2">
-                <span className="text-[10px] font-code bg-primary/10 text-primary px-2 py-0.5 rounded-full border border-primary/20">
-                  {project.tag}
-                </span>
-                <span className="text-[10px] font-code text-muted-foreground">
-                  {project.tech}
-                </span>
-              </div>
-              
-              <h2 className="text-2xl font-bold mb-2 group-hover/item:neon-text transition-all">
-                {project.title}
-              </h2>
-              
-              <p className="text-sm text-muted-foreground leading-relaxed mb-4">
-                {project.description}
-              </p>
+        <div className="space-y-10">
+          {projects.map((project, index) => {
+            const imgData = PlaceHolderImages.find(img => img.id === project.imageId) || PlaceHolderImages[0];
+            
+            return (
+              <div key={index} className="group/item border-b border-white/5 pb-8 last:border-0 last:pb-0">
+                <div className="relative aspect-video w-full mb-4 rounded-xl overflow-hidden border border-white/10 group-hover/item:border-primary/30 transition-all">
+                  <Image
+                    src={imgData.imageUrl}
+                    alt={project.title}
+                    fill
+                    className="object-cover opacity-80 group-hover/item:opacity-100 group-hover/item:scale-105 transition-all duration-500"
+                    data-ai-hint={imgData.imageHint}
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                  <div className="absolute bottom-3 left-3 flex gap-2">
+                    <span className="text-[10px] font-code bg-primary text-black px-2 py-0.5 rounded-full font-bold">
+                      {project.tag}
+                    </span>
+                    <span className="text-[10px] font-code bg-black/50 backdrop-blur-md text-white px-2 py-0.5 rounded-full border border-white/20">
+                      {project.tech}
+                    </span>
+                  </div>
+                </div>
+                
+                <h2 className="text-2xl font-bold mb-2 group-hover/item:neon-text transition-all">
+                  {project.title}
+                </h2>
+                
+                <p className="text-sm text-muted-foreground leading-relaxed mb-4">
+                  {project.description}
+                </p>
 
-              <Button 
-                variant="outline" 
-                size="sm"
-                className="rounded-full border-primary/20 hover:border-primary transition-all gap-2 group/btn"
-                onClick={() => window.open(project.link, '_blank')}
-              >
-                Lihat Kode
-                <ExternalLink className="w-3 h-3 group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform" />
-              </Button>
-            </div>
-          ))}
+                <Button 
+                  variant="outline" 
+                  size="sm"
+                  className="rounded-full border-primary/20 hover:border-primary transition-all gap-2 group/btn"
+                  onClick={() => window.open(project.link, '_blank')}
+                >
+                  Lihat Kode
+                  <ExternalLink className="w-3 h-3 group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform" />
+                </Button>
+              </div>
+            );
+          })}
         </div>
       </ScrollArea>
 

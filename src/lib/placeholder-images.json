@@ -9,8 +9,20 @@
     {
       "id": "project-rbac",
       "description": "Abstract security system visualization",
-      "imageUrl": "https://images.unsplash.com/photo-1716380703770-c3dd70781e82?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzZXJ2ZXIlMjBzZWN1cml0eXxlbnwwfHx8fDE3NzA0MjI1MTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "server security"
+      "imageUrl": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "cyber security"
+    },
+    {
+      "id": "project-arsip",
+      "description": "Digital archive system illustration",
+      "imageUrl": "https://images.unsplash.com/photo-1544396821-4dd40b938ad3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "digital documents"
+    },
+    {
+      "id": "project-api",
+      "description": "API Gateway visualization",
+      "imageUrl": "https://images.unsplash.com/photo-1558494949-ef010cbdcc51?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "imageHint": "server network"
     },
     {
       "id": "cert-backend",
