@@ -1,33 +1,28 @@
-# Portofolio Nara - Backend Developer
 
-Portofolio modern berbasis Bento Grid untuk Backend Developer & System Architect.
+# Panduan Portofolio Nara - Backend Developer
 
-## Fitur Utama
-- **Bento Grid Design**: Layout responsif dan futuristik.
-- **SEO Optimized**: Teroptimasi untuk kata kunci "Backend Developer PHP Indonesia".
-- **Interactive Certificates**: Grid 3x3 di mobile dengan detail modal.
-- **Project JSON**: Kelola data portofolio dengan mudah melalui file `src/lib/projects.json`.
-- **Copy to Clipboard**: Fitur salin email otomatis di bagian kontak.
-- **WhatsApp Integration**: Link pesan otomatis untuk komisi atau kerjasama.
+Semua data portofolio Anda sekarang sangat mudah dikelola. Anda tidak perlu mengerti kode yang rumit, cukup edit file JSON di folder `src/lib/`.
 
-## Cara Push ke GitHub Anda
-Jika Anda ingin meng-upload project ini ke GitHub:
+## 📁 Di Mana Saya Harus Mengedit Data?
 
-1. Buat repositori baru di [GitHub](https://github.com/new).
-2. Buka terminal di folder project ini.
-3. Jalankan perintah berikut:
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial commit - Portofolio Nara"
-   git branch -M main
-   git remote add origin https://github.com/USERNAME-KAMU/NAMA-REPO-KAMU.git
-   git push -u origin main
-   ```
+1.  **Tambah/Edit Proyek:**
+    Buka file `src/lib/projects.json`.
+    *   `imageUrl`: Masukkan link gambar atau path file gambar.
+    *   `link`: Masukkan link GitHub proyek Anda.
 
-## Teknologi
-- Next.js 15
-- React 19
-- Tailwind CSS
-- Lucide Icons
-- ShadCN UI
+2.  **Tambah/Edit Sertifikat & PDF:**
+    Buka file `src/lib/certificates.json`.
+    *   `pdfUrl`: Masukkan link file PDF sertifikat Anda. Jika file ada di komputer, upload ke folder `public/certs/` dan ganti isinya menjadi `/certs/nama-file.pdf`.
+
+3.  **Ganti Foto Profil:**
+    Buka file `src/lib/placeholder-images.json` dan ganti URL pada ID `profile-nara`.
+
+## 🚀 Cara Menampilkan Gambar/PDF Sendiri
+- **Gambar:** Masukkan foto ke folder `public/images/`.
+- **PDF:** Masukkan file ke folder `public/certs/`.
+- Lalu di file JSON, panggil dengan cara: `/images/foto.jpg` atau `/certs/file.pdf`.
+
+## 🛠 Teknologi Utama
+- Next.js 15 (Framework)
+- Tailwind CSS (Desain)
+- JSON Based Data (Kemudahan Update)

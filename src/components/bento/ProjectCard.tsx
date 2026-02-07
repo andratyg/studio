@@ -21,15 +21,15 @@ export default function ProjectCard() {
       </div>
 
       <ScrollArea className="flex-1 pr-4 -mr-4">
-        <div className="space-y-10">
+        <div className="space-y-8">
           {projects.map((project, index) => (
-            <div key={index} className="group/item border-b border-white/5 pb-8 last:border-0 last:pb-0">
+            <div key={index} className="group/item border-b border-white/5 pb-6 last:border-0 last:pb-0">
               <div className="relative aspect-video w-full mb-4 rounded-xl overflow-hidden border border-white/10 group-hover/item:border-primary/30 transition-all">
                 <Image
                   src={project.imageUrl}
                   alt={project.title}
                   fill
-                  className="object-cover opacity-80 group-hover/item:opacity-100 group-hover/item:scale-105 transition-all duration-500"
+                  className="object-cover opacity-80 group-hover/item:opacity-100 transition-all duration-500"
                   data-ai-hint={project.imageHint}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
